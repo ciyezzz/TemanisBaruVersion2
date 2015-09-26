@@ -1,7 +1,8 @@
 .jumbotron{
-	background: url("Youth Study Pic (1).jpg");
+	background: url("wL7Hpw4.jpg");
 	background-size: 100%;
-	background-position: top left;	
+	background-position: top left;
+	height: 100%;	
 }
 #register{
 	margin: 10px;
