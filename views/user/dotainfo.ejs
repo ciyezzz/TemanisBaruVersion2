@@ -1,0 +1,45 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:rgb(0,65,133); height:85px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top:17px;" class="navbar-brand" href="/user/siswa"><img src="/images/logotemanis.png" height="25px;"></a>
+    </div>
+</div>
+<div class="jumbotron" style="margin-bottom:0px; padding:15px 0pt; margin-top:15px;">
+ <ul class="list-group" style="margin-top:70px; margin-left:20px;width: 500px;">
+    <h4 style="color:white;">Welcome, <%=session.User.alias%></h4>
+</ul>
+  <div class="list-group" style="margin-bottom:75px;">
+  <a href="/user/editsiswa" class="list-group-item" style="width:260px; background-color:rgba(0,0,0,0.5); color:white;">Edit Profile</a>
+  <a href="/user/listsiswa" class="list-group-item" style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">School List</a>
+  <a href="/user/changepwsiswa" class="list-group-item" style="width:260px;background-color:rgba(0,0,0,0.5); color:white; ">Change Password</a>
+  <a href="/user/reportsiswa" class="list-group-item"style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">Report A Problem</a>
+  <a href="/" class="list-group-item"style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">Logout</a>
+</div>
+ 
+<div id="editprofile" style="margin-top:-456px; margin-bottom:12px; background-color:rgba(0,0,0,0.5); width:550px; height:600px; margin-left:420px; padding-bottom:30px;">
+  <%if(usrObj.x) { %>
+  <div class="col-sm-6 col-md-4">
+    
+        <h3 style="color:white; padding-top:0px; margin-left:20px;width:500px;"><%=user.alias%></h3>
+        <p style="color:white; margin-left:20px;margin-right:20px; width:500px; font-size:16px;"><%=user.info%></p>
+        <form action="/user/createList" method="POST">
+            <select name="grade" style="margin-left:20px; margin-top:200px;">
+        			<option value=" " selected="selected">Pilih tingkatan</option>
+        			<option value="SD">SD</option>
+        			<option value="SMP">SMP</option>
+        			<option value="SMA">SMA</option>
+        		</select>
+      		<input type="submit" class="btn btn-default" value="Register" style="margin-left:20px;background-color:rgb(1, 164, 239);"></input>
+      </form>
+</div>
+    
+  </div>
+  <% } %>
+</div>

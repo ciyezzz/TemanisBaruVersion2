@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEMANIS BARU | Website Pendaftaran Siswa</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    
+    <!--  
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+        
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+            
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+    <style type="text/css" media="screen">
+      #footer : {
+      position:fixed;
+      left:0px;
+      bottom:0px;
+      height:200px;
+      width:100%;
+      background:#000;
+      }  
+    </style>
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap-theme.css">
+    <link rel="stylesheet" href="/styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/component.css">
+    <link rel="stylesheet" href="/styles/demo.css">
+    <link rel="stylesheet" href="/styles/flat-ui.css">
+    <link rel="stylesheet" href="/styles/font-awesome.css">
+    <link rel="stylesheet" href="/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/insertbackground.css">
+    <link rel="stylesheet" href="/styles/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/wowslider.css">
+    <link rel="stylesheet" href="/styles/wowslider.mod.css">
+    <!--STYLES END-->
+  </head>
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:rgb(0,65,133); height:85px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top:17px;" class="navbar-brand" href="#"><img src="/images/logotemanis.png" height="25px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+      <!-- <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form> -->
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color:white;">Login</a></li>
+        <li><a href="#" style="color:white;">Register</a></li> -->
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>
+  <body>
+    
+    <%- body %>
+
+
+    <!--<footer style="text-align:center; background-color:rgb(0, 65, 133); color:white; padding: 10px; margin-bottom:0px; margin-top : 100px;">Copyright &copy 2014 TEMANIS BARU. All rights reserved.</footer>-->
+    <div id="footer" style="text-align:center; position:fixed; left:0px;bottom:0px;height:30px;width:100%;background-color:rgb(0, 65, 133); color:white;">
+      Copyright &copy 2014 TEMANIS BARU. All rights reserved.
+    </div>
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
+        that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+        
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different template engine (handlebars, jade, dust, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    
+    <!--TEMPLATES END-->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can 
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+      
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+          
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/affix.js"></script>
+    <script src="/js/alert.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/button.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/collapse.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.timeago.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/masonry.pkgd.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/modernizr.min.js"></script>
+    <script src="/js/photostack.js"></script>
+    <script src="/js/popover.js"></script>
+    <script src="/js/radiocheck.js"></script>
+    <script src="/js/require.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/scrollspy.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="/js/tooltip.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/wowslider.js"></script>
+    <script src="/js/wowslider.mod.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>

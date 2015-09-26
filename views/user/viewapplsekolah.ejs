@@ -1,0 +1,81 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:rgb(0,65,133); height:85px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top:17px;" class="navbar-brand" href="/user/siswa"><img src="/images/logotemanis.png" height="25px;"></a>
+    </div>
+</div>
+<div class="jumbotron" style="margin-bottom:0px; padding:15px 0pt; margin-top:15px;">
+<ul class="list-group" style="margin-top:70px; margin-left:10px;width: 500px;">
+    <h8 style="color:white;">Welcome, <%=session.User.alias%></h8>
+</ul>
+</ul>
+</ul>
+  <div class="list-group">
+  <a href="/user/editsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Edit Info</a>
+  <a href="/user/pendingsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Pending Register</a>
+  <a href="/user/changepwsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Change Password</a>
+  <a href="/user/viewapplsekolah" class="list-group-item"style="width:250px;background-color:rgba(0,0,0,0.5); color:white;">View Applicants</a>
+  <a href="/user/reportsekolah" class="list-group-item"style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Report A Problem</a>
+  <a href="/" class="list-group-item"style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Logout</a>
+</div>
+<div id="editprofile" style="margin-top:-455px; margin-bottom:12px; background-color:rgba(0,0,0,0.5); width:800px; height:600px; margin-left:370px; padding-bottom:30px;">
+<h3 style="color:white; padding-top:20px; margin-left:20px;">Applicants</h3>
+<form action="/user/viewapplsekolah" method="post">
+<select name="filter" style="margin-top:0px; margin-left:20px;margin-bottom:10px;">
+<option value="filterby" selected="selected">Filter by</option>
+<option value="name">Name</option>
+<option value="age">Age</option>
+<option value="sex">Sex</option>
+<option value="grade">Grade</option>
+</select>
+<input type="submit" value="Ok">
+</form>
+  <table width="95%" border="1" style="color:rgb(249,188,11);margin-left:20px;">
+  <tr>
+    <td>Name</td>
+    <td>Sex</td>
+    <td>Age</td>
+    <td>Grade</td>
+  </tr>
+  <% _.each(lists, function(list){ %>
+      <%if(!list.pending) { %>
+      <% _.each(users, function(user){%>
+        <% if (user.id==list.iduser && list.action) { %>
+            <tr>
+              <td><%=user.firstname%> <%=user.lastname%></td>
+              <td>M</td>
+              <td>15</td>
+              <td><%=list.grade%></td>
+            </tr>
+            <% return false; %>
+      <% } %>
+      <% }) %>
+      <% } %>
+  <% }) %>
+  <!--<tr>
+    <td>Jansen</td>
+    <td>M</td>
+    <td>13</td>
+    <td>SMP</td>
+  </tr>
+  <tr>
+    <td>Kelvin Hermawan Leonardo</td>
+    <td>M</td>
+    <td>7</td>
+    <td>SD</td>
+  </tr>
+  <tr>
+    <td>Nana</td>
+    <td>F</td>
+    <td>14</td>
+    <td>SMP</td>
+  </tr>-->
+</table>
+</div>

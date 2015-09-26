@@ -1,0 +1,20 @@
+.jumbotron{
+	background: url("Youth Study Pic (1).jpg");
+	background-size: 100%;
+	background-position: top left;	
+}
+#register{
+	margin: 10px;
+	margin-left: 400px;
+	margin-bottom: 65px;
+}
+#register input{
+	margin: 5px;
+	width: 500px;
+}
+#register button{
+	margin: 10px;
+	margin-top: 20px;
+	background-color: rgb(1, 164, 239);
+	color: white;
+}

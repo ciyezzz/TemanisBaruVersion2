@@ -1,0 +1,25 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:rgb(0,65,133); height:85px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top:17px;" class="navbar-brand" href="/user/siswa"><img src="/images/logotemanis.png" height="25px;"></a>
+    </div>
+</div>
+<div class="jumbotron" style="margin-bottom:0px; padding:15px 0pt; margin-top:15px;">
+<ul class="list-group" style="margin-top:70px; margin-left:15px;width: 500px;">
+    <h8 style="color:white;">Welcome, <%=session.User.alias%></h8>
+</ul>
+  <div class="list-group" style="margin-bottom:75px;">
+  <a href="/user/editsiswa" class="list-group-item" style="width:260px; background-color:rgba(0,0,0,0.5); color:white;">Edit Profile</a>
+  <a href="/user/listsiswa" class="list-group-item" style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">School List</a>
+  <a href="/user/changepwsiswa" class="list-group-item" style="width:260px;background-color:rgba(0,0,0,0.5); color:white; ">Change Password</a>
+  <a href="/user/reportsiswa" class="list-group-item"style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">Report A Problem</a>
+  <a href="/" class="list-group-item"style="width:260px;background-color:rgba(0,0,0,0.5); color:white;">Logout</a>
+</div>
+</div>

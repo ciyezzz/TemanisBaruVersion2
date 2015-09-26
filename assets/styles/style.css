@@ -1,0 +1,105 @@
+		body{
+			padding-top: 60px;
+			width: 100%;
+		}
+		.nav-pd1, .nav-pd2, .nav-pd3, .nav-pd4{
+			float: left;
+			padding-right: 20px;
+		}
+		.nav-pd1 h4, .nav-pd2 h4, .nav-pd3 h4, .nav-pd4 h4{
+			color: gray;
+		}
+		.nav-pd1 li, .nav-pd2 li, .nav-pd3 li, .nav-pd4 li{
+			margin: 5px 0;
+		}
+		.pull-right td{
+			padding: 10px;
+		}
+		.pull-right #copy{
+			font-size: 13px;
+		}
+		.list-item{
+			margin-top: -392px;
+			margin-left:80%;
+		}
+		.face {
+			margin-left: 5px;
+			width: 110px;
+			height: 110px;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+			padding-top: 6px;
+		}
+		.c-left{
+			padding-right: 40px;
+		}
+		.regsite .control-group, .form-signin .control-group{
+			padding-bottom: 10px;
+		}
+		#shopcart{
+			border-left: 1px solid gray;
+			height: 100px;
+			margin-right: 15px;
+			float: right;
+			margin-top: -100px;
+			background-repeat: no-repeat;
+		}
+		p#desc-facename, p#desc-faceshop, p#desc-faceaddr{
+			color: white;
+		}
+		p#desc-facename{
+			font-size:20px; 
+			font-family:Georgia, Verdana, Times New Roman; 
+			margin-left: 200px;
+			margin-top: -100px;
+		}
+		p#desc-faceshop{
+			font-size:15px; 
+			margin-left: 230px;
+			font-family:Georgia, Verdana, Times New Roman; 
+		}
+		p#desc-faceaddr{
+			font-size:15px; 
+			margin-left: 200px;
+			font-family:Georgia, Verdana, Times New Roman; 
+		}
+		.navbar-brand{
+			margin-top: -10px;
+		}
+		#nav-signin{
+			margin-top: -5px;
+			margin-right: 180px;
+		}
+		._sign{
+			font-family: Georgia, Verdana, Times New Roman; 
+			color: #500000;
+		}
+		.tbl-signup td{
+			padding-bottom: 10px;
+		}
+		#log-site h3{
+			font-family: Georgia, Verdana, Times New Roman; 
+			color: #500000;
+		}
+		.cart{
+			padding-left:20px;
+			padding-top:30px;
+		}
+		.image{
+			width: 720px;
+			height: 260px;
+		}
+		.image img{
+			width: 710px;
+			height: 405px;
+		}
+		#desc{
+			width: 710px;
+		}
+		.btn{
+			margin-top: 10px;
+		}
+		.lbl{
+			padding-right: 50px;
+		}

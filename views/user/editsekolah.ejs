@@ -1,0 +1,35 @@
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:rgb(0,65,133); height:85px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="margin-top:17px;" class="navbar-brand" href="/user/sekolah"><img src="/images/logotemanis.png" height="25px;"></a>
+    </div>
+</div>
+<div class="jumbotron" style="margin-bottom:0px; padding:15px 0pt; margin-top:15px;">
+<ul class="list-group" style="margin-top:70px; margin-left:10px;width: 500px;">
+    <h8 style="color:white;">Welcome, <%=session.User.alias%></h8>
+</ul>
+</ul>
+</ul>
+  <div class="list-group">
+  <a href="/user/editsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Edit Info</a>
+  <a href="/user/pendingsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Pending Register</a>
+  <a href="/user/changepwsekolah" class="list-group-item" style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Change Password</a>
+  <a href="/user/viewapplsekolah" class="list-group-item"style="width:250px;background-color:rgba(0,0,0,0.5); color:white;">View Applicants</a>
+  <a href="/user/reportsekolah" class="list-group-item"style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Report A Problem</a>
+  <a href="/" class="list-group-item"style="width:250px; background-color:rgba(0,0,0,0.5); color:white;">Logout</a>
+</div>
+<div id="editprofile" style="margin-top:-456px; margin-bottom:12px; background-color:rgba(0,0,0,0.5); width:550px; height:600px; margin-left:420px; padding-bottom:30px;">
+        <h3 style="color:white; padding-top:20px; margin-left:20px;">Edit Info Sekolah</h3>
+        <form action="/user/editinfo" method="post">
+        <textarea style="width:510px;height:150px;margin-top:0px;margin-left:20px;" name="info"><%=session.User.info%></textarea>
+        <input type="submit" style="margin-top:160px; margin-left:-82px;background-color:rgb(1, 164, 239);"class="btn btn-default" value="Update"></input>
+      </form>
+  </div>
+  </div>
