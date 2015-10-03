@@ -4950,7 +4950,7 @@ a.list-group-item:hover,
 a.list-group-item:focus {
   color: #555;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: rgb(243, 66, 54);
 }
 .list-group-item.disabled,
 .list-group-item.disabled:hover,

@@ -10,6 +10,7 @@
 3. Dashboard Murid
 - Edit Profile
 * Place / Date of Birth
+	alert tanggal yang dipilih tidak valid
 * Address
 * Sex
 * Phone Number
