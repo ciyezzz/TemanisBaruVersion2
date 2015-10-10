@@ -13,9 +13,7 @@ module.exports = {
 			password : req.param('password'),
 			pilihan : req.param('pil')
 		}
-		if(usrObj.pilihan=="admin")
-			return res.redirect('/user/admin');
-		else if(usrObj.pilihan=="murid")
+		if(usrObj.pilihan=="murid")
 			return res.redirect('/user/siswa');
 		else if(usrObj.pilihan=="sekolah")
 			return res.redirect('/user/sekolah');
@@ -111,10 +109,6 @@ module.exports = {
 			}
 			return res.redirect('/user/pendingsekolah');
 		});
-	},
-	admin : function(req,res,next)
-	{
-		res.view();
 	},
 	siswa : function(req,res,next)
 	{
@@ -305,24 +299,69 @@ module.exports = {
 			});
 		}
 	},
+	uploadto : function(req,res,next){
+		var usrObj={
+			name : req.param('name'),
+			email : req.param('email')
+		};
+		if(typeof req.param('file_name')=="undefined")
+			 usrObj.filename = "";
+		else
+			 usrObj.filename = req.param('file_name');
+		if(typeof req.param('file_url')=="undefined")
+	 		usrObj.fileurl = "";
+	 	else
+	 		usrObj.fileurl = req.param('file_url');
+	 	var transporter = nodemailer.createTransport({
+				 		service:'Gmail',
+						auth:{
+							user:'tunetify@gmail.com',
+							pass:'kampoengboy@1994'
+						}
+				});
+				if(usrObj.fileurl!="")
+				{
+						var MailOptions = {
+										from:'Tunetify<tunetify@gmail.com>',
+										to : 'mike.visualsoft@gmail.com',
+										subject : 'Apply Startup',
+										html : 'Hai, Admin. Seseorang mengirimkan profil startupnya dengan informasi sebagai berikut : <br><br>Nama Startup: '+usrObj.name+'<br>Website URL : '+ usrObj.url+'<br>Email : '+ usrObj.email +'<br>No. Telepon : '+ usrObj.phone+'<br>Deskripsi Startupnya adalah : <br><pre>'+usrObj.description+'</pre>',
+										attachments : [
+											{
+													filename : usrObj.filename,
+													path : usrObj.fileurl
+											}
+										]
+						};
+				}
+				else {
+					var MailOptions = {
+									from:'Tunetify<tunetify@gmail.com>',
+									to : usrObj.email,
+									subject : 'Apply Startup',
+									html : 'Hai, Admin. Seseorang mengirimkan profil startupnya dengan informasi sebagai berikut : <br><br>Nama Startup: '+usrObj.name+'<br>Website URL : '+ usrObj.url+'<br>Email : '+ usrObj.email +'<br>No. Telepon : '+ usrObj.phone+'<br>Deskripsi Startupnya adalah : <br><pre>'+usrObj.description+'</pre>',
+					};
+				}
+				transporter.sendMail(MailOptions,function(error,info){
+							if (error) {
+								console.log(error);
+							} else {
+								console.log('Message sent: '+info.response);
+							}
+				});
+				return res.redirect('/user/siswa');
+	},
 	createuser : function(req,res,next){
 		var pil = false;
 		if(req.param('pil')=='loginsekolah')
 				pil = true;
 		var usrObj = {
-			password : req.param('password'),
-			firstname : req.param('firstname'),
-			lastname : req.param('lastname'),
+			name : req.param('name'),
 			email : req.param('email'),
-			alias : req.param('alias'),
-			info : " ",
+			password : req.param('password'),
+			reenterpassword : req.param('reenterpassword'),
 			sekolah : pil
 		}
-		/*User.find({'sekolah':false}, function foundUser(err,user){
-			res.view({
-				user:user	
-			});
-		})*/
 		User.create(usrObj, function Usercreated(err,user){
 			user.save(function(user){});
 		});

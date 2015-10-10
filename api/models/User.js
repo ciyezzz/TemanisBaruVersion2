@@ -9,14 +9,11 @@ module.exports = {
 
   attributes: {
   		password : 'string',
-  		firstname : 'string',
-  		lastname : 'string',
+      name : 'string',
   		email : 'string',
       datebirth : 'string',
       placebirth : 'string',
-      alias : 'string',
       info : 'string',
-      addr : 'string',
   		sekolah : {
   			type : 'boolean',
   			defaultsTo : false

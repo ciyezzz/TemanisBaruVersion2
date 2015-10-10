@@ -14,7 +14,15 @@
 </div>
 <div class="jumbotron" style="margin-bottom:0px; padding:80pt 0pt; margin-top:0px;">
 <ul class="list-group" style="margin-top:0px; margin-left:15px;width: 500px; box-shadow: none;">
-    <h8 style="color:white;font-family: 'Roboto', sans-serif; text-shadow: 0.5px 0.5px 1px rgb(10,10,10);">Welcome, <%=session.User.alias%></h8>
+    <h8 style="color:white;font-family: 'Roboto', sans-serif; text-shadow: 0.5px 0.5px 1px rgb(10,10,10);">Welcome, <%=session.User.name%></h8>
+    <form action="/user/uploadto" method="post">
+    <input type="file" id="avatar" onchange="previewFile()"/>
+    <input type="text" name="nama" style="color:black"/>
+    <input type="text" name="email" style="color:black"/>
+     <input type="hidden" name="file_name" id="filename">
+      <input type="hidden" name="file_url" id="fileurl">
+      <button type="submit" id="send" class="btn-color btn btn-primary">Upload</button>
+  </form>
 </ul>
   <div class="list-group" style="margin-bottom:75px;font-family: 'Roboto', sans-serif; border-radius: 0pt; border-color:rgb(10,10,10);">
   <a href="/user/editsiswa" class="list-group-item" style="width:260px; background-color:rgb(10,10,10); color:white;border-radius: 0pt; border-color: rgb(243, 66, 54);" onmouseover="this.style.background='rgb(243, 66, 54)' " onmouseout="this.style.background='rgb(10,10,10)'">Edit Profile</a>
@@ -23,3 +31,40 @@
   <a href="/user/reportsiswa" class="list-group-item"style="width:260px;background-color:rgba(10,10,10,1); color:white;border-radius: 0pt;border-color: rgb(243, 66, 54);" onmouseover="this.style.background='rgb(243, 66, 54)' " onmouseout="this.style.background='rgb(10,10,10)'">Report A Problem</a>
   <a href="/" class="list-group-item"style="width:260px;background-color:rgba(10,10,10,1); color:white;border-radius: 0pt;border-color: rgb(243, 66, 54);" onmouseover="this.style.background='rgb(243, 66, 54)' " onmouseout="this.style.background='rgb(10,10,10)'">Logout</a>
 </div>
+<script type="text/javascript">
+  function previewFile(){
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+  var file_url = document.querySelector('#fileurl');
+  var file_name = document.querySelector('#filename');
+  reader.onloadend = function () {
+      file_url.value = reader.result;
+  }
+  if (file) {
+      /*if(file.type!="application/zip" && file.type!="application/x-rar")
+      {
+        $('#avatar').val("");
+        alert("File yang diupload harus dalam bentuk RAR ataupun ZIP.");
+        file_name.value = "";
+        file_url.value = "";
+        return;
+      }*/
+      if(file.size>=10000000)
+      {
+          $('#avatar').val("");
+          alert("File yang diupload tidak boleh lebih dari 10 MB.");
+          file_name.value = "";
+          file_url.value = "";
+          return;
+      }
+      else {
+        file_name.value = file.name;
+        reader.readAsDataURL(file); //reads the data as a URL
+      }
+    } else {
+      file_name.value = "";
+      file_url.value = "";
+  }
+}
+previewFile();
+</script>
