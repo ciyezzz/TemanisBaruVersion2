@@ -1,38 +1,29 @@
 1. Register
-- Name
-- Email Address
-- Password
-- Reenter Password
-- Button (Murid & Sekolah)
+- Verifikasi Email
+- Untuk sekolah harus tunggu verifikasi lagi dari admin dengan mengupload dokumen misalnya surat dari pemerintah
 
 2. Login
 
 3. Dashboard Murid
-- Edit Profile
-* Place / Date of Birth
-	alert tanggal yang dipilih tidak valid
-* Address
-* Sex
-* Phone Number
+- Edit Profile dihapuskan
+- Place / Date of Birth
+	pakai widget
+- Address (text area karena panjang)
+- Notifikasi dari pihak sekolah tentang pemberitahuan selanjutnya dari sekolah
 
-- Change Password
-- Report A Problem
-- School List
 * Search Bar
 * List Sekolah (Gambar, Nama, Alamat, No. Telp, Sisa Daya Tampung)
 # Kalau diklik, redirect ke page sekolah (nama, alamat, notel, info, tombol dftr)
 # Setelah tombol diklik, redirect ke page pendaftaran murid baru
 # Page pendaftaran berisi no. pendaftaran (auto number), nama, agama, nama ortu (ayah & ibu), pekerjaan ortu, asal sekolah, alamat sekolah, no. sttb, tahun lulus, nilai UAN & UAS (upload ijazah)
 
-- Logout
-
 4. Dashboard Sekolah
-- Edit Info
-- Pending Register
+
 * Total Pending Applicants
 * List (no. pendaftaran, nama, asal sekolah)
 # Setelah diklik redirect ke page biodata murid
 
-- View Applicants
-* List (NIM, nama, sex, class)
-
+- View Applicants harus ada contacted (true/false) untuk mengetahui murid yang sudah dicontact / belum
+- view applicants harus ada nomor registrasi
+- filter berdasarkan tahun ajarin ,sex,jlh cowo cewe, sumber sekolah
+- murid harus dibuat tahun ajaran untuk memisahkan angkatan
