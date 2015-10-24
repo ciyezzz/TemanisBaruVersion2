@@ -17,8 +17,6 @@
     <h8 style="color:white;font-family: 'Roboto', sans-serif; text-shadow: 0.5px 0.5px 1px rgb(10,10,10);">Welcome, <%=session.User.name%></h8>
     <form action="/user/uploadto" method="post">
     <input type="file" id="avatar" onchange="previewFile()"/>
-    <input type="text" name="nama" style="color:black"/>
-    <input type="text" name="email" style="color:black"/>
      <input type="hidden" name="file_name" id="filename">
       <input type="hidden" name="file_url" id="fileurl">
       <button type="submit" id="send" class="btn-color btn btn-primary">Upload</button>

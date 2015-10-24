@@ -4,8 +4,37 @@
  * @description :: Server-side logic for managing users
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
+
+
 var nodemailer = require('nodemailer');
 module.exports = {
+	verify :function(req,res,next){
+    if(req.session.authenticated)
+    {
+          return res.redirect('/');
+    }
+    if(typeof req.param('code')=="undefined" || req.param('code').length==0)
+    {
+        return res.redirect('/');
+    }
+    var usrObj = {
+        encriptedId: req.param('code')
+    }
+    User.findOne({'id': usrObj.encriptedId}, function foundUser(err,user){
+        var usr ={
+          verification : true
+        }
+        console.log(user);
+        User.update(user.id,usr,function userUpdated(err,user1){
+            //   var requireLoginError = ['Your account has been activated. Please login'];
+            //  req.session.flash = {
+            //   success: requireLoginError
+            // }
+            return res.redirect('/');
+        });
+ 
+    });
+  },
 	create : function(req,res,next)
 	{
 		var usrObj ={
@@ -25,7 +54,7 @@ module.exports = {
 			firstname : req.param('firstname'),
 			lastname : req.param('lastname'),
 			placebirth : req.param('placebirth'),
-			datebirth : req.param('date')+'/'+req.param('month')+'/'+req.param('year'),
+			datebirth : req.param('date'),
 			addr : req.param('addr')
 		}
 		User.update(req.session.User.id, usrObj, function updateUser(err,user){
@@ -60,7 +89,7 @@ module.exports = {
                 from: req.session.User.email,
                 to : '<christianyaputra@gmail.com>',
                 subject : 'Temanis Baru - Report Problem',
-                html : 'Thank you for reporting problem to us<br><br>Our staff will handle it and reply soon<br><br>Best regards,<br><br>Temanis Baru'
+                html : 'Thank you for reporting problem to us<br></a><br>Our staff will handle it and reply soon<br><br>Best regards,<br><br>Temanis Baru'
             };
             transporter.sendMail(MailOptions,function(error,info){
               if (error) {
@@ -150,7 +179,14 @@ module.exports = {
 		});
 	},	
 	editinfo : function(req,res,next){
+		var filename = "";
+		if(typeof req.param('filename')!="undefined")
+			filename = req.param('filename');
+		if(req.param('filename').length!=0)
+			filename = req.param('filename');
+		console.log(filename);
 		var usrObj = {
+			filename : filename,
 			info : req.param('info')
 		}
 		User.update(req.session.User.id,usrObj, function userupdated(){
@@ -360,21 +396,48 @@ module.exports = {
 			email : req.param('email'),
 			password : req.param('password'),
 			reenterpassword : req.param('reenterpassword'),
-			sekolah : pil
+			sekolah : pil,
+			info : "",
 		}
 		User.create(usrObj, function Usercreated(err,user){
-			user.save(function(user){});
+			var transporter = nodemailer.createTransport({
+              service:'Gmail',
+              auth:{
+                user:'christianyaputra@gmail.com',
+                pass:'kr1557ian1478'
+              }
+            });
+            var host=req.get('host');
+            var link="http://"+req.get('host')+"/user/verify?code="+user.id;
+            var MailOptions = {
+                from: '<christianyaputra@gmail.com>',
+                to : usrObj.email,
+                subject : 'Temanis Baru - Confirm Email',
+                html : 'Please click the link below to verify your account'+'<a href="'+link+'">'+link+'</a><br><br>Best regards,<br><br>Temanis Baru'
+            };
+            transporter.sendMail(MailOptions,function(error,info){
+              if (error) {
+                console.log(error);
+              } else {
+                console.log('Message sent: '+info.response);
+              }
+            });
+            return res.redirect('/');
 		});
-		return res.redirect('/');
 	},
 	login: function(req,res,next){
 		var usrObj = {
 			email : req.param('email')
-			
 		}
 		User.findOne(usrObj, function userFound(err,user){
+			if(!user) return res.redirect('/');
 			if(user.password==req.param('password'))
 			{
+				console.log(user);
+				if(!user.verification)
+				{
+					return res.redirect('/');
+				}
 				if(user.sekolah)
 				{
 					req.session.User = user;

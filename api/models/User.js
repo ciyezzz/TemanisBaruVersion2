@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+      filename : 'string',
   		password : 'string',
       name : 'string',
   		email : 'string',
@@ -17,7 +18,11 @@ module.exports = {
   		sekolah : {
   			type : 'boolean',
   			defaultsTo : false
-  		}
+  		},
+      verification : {
+        type : 'boolean',
+        defaultsTo : false
+      }
   }
 };
 

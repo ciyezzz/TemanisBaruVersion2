@@ -13,7 +13,7 @@
 </div>
 <div class="jumbotron" style="margin-bottom:0px; padding:15px 0pt; margin-top:15px;">
 <ul class="list-group" style="margin-top:70px; margin-left:10px;width: 500px;">
-    <h8 style="color:white;">Welcome, <%=session.User.alias%></h8>
+    <h8 style="color:white;">Welcome, <%=session.User.name%></h8>
 </ul>
 </ul>
 </ul>
@@ -28,8 +28,35 @@
 <div id="editprofile" style="margin-top:-456px; margin-bottom:12px; background-color:rgba(0,0,0,0.5); width:550px; height:600px; margin-left:420px; padding-bottom:30px;">
         <h3 style="color:white; padding-top:20px; margin-left:20px;">Edit Info Sekolah</h3>
         <form action="/user/editinfo" method="post">
+        <input type="file" accept="image/*"  onchange="showMyImage(this)" />
+ <br/>
+<img id="thumbnil" style="width:20%; margin-top:10px;"  src="" alt="image"/>
         <textarea style="width:510px;height:150px;margin-top:0px;margin-left:20px;" name="info"><%=session.User.info%></textarea>
         <input type="submit" style="margin-top:160px; margin-left:-82px;background-color:rgb(1, 164, 239);"class="btn btn-default" value="Update"></input>
+          <input type="hidden" name="filename" id="linkimg"/>
       </form>
   </div>
   </div>
+<script>
+function showMyImage(fileInput) {
+        var files = fileInput.files;
+        for (var i = 0; i < files.length; i++) {           
+            var file = files[i];
+            var imageType = /image.*/;     
+            if (!file.type.match(imageType)) {
+                continue;
+            }           
+            var img=document.getElementById("thumbnil");            
+            img.file = file;    
+            var reader = new FileReader();
+            reader.onload = (function(aImg) { 
+                return function(e) { 
+                    var filename = document.getElementById('linkimg');
+                    filename.value = e.target.result;
+                    aImg.src = e.target.result; 
+                }; 
+            })(img);
+            reader.readAsDataURL(file);
+        }    
+    }
+</script>

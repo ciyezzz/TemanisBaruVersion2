@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+  		filename : 'string',
   		name : 'string'
   }
 };
