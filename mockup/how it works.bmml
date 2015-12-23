@@ -16,48 +16,49 @@
         <text>How%20It%20Works</text>
       </controlProperties>
     </control>
-    <control controlID="50" controlTypeID="com.balsamiq.mockups::LinkBar" x="440" y="125" w="-1" h="-1" measuredW="376" measuredH="19" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>How%20It%20Works%2C%20Sign%20Up%2C%20Sign%20In%2C%20About%2C%20Team%2C%20Contact</text>
-      </controlProperties>
-    </control>
-    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="288" y="228" w="-1" h="-1" measuredW="320" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="315" y="228" w="-1" h="-1" measuredW="266" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <text>Learn%20how%20we%20help%20you%20register%20to%20your%20favorite%20school.</text>
+        <text>Learn%20how%20we%20help%20you%20register%20to%20our%20school.</text>
       </controlProperties>
     </control>
-    <control controlID="52" controlTypeID="com.balsamiq.mockups::IconLabel" x="224" y="303" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::IconLabel" x="224" y="303" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Sign%20Up</text>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::IconLabel" x="411" y="303" w="-1" h="-1" measuredW="75" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::IconLabel" x="412" y="303" w="-1" h="-1" measuredW="73" measuredH="63" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Apply%20School</text>
+        <text>Apply%20Grade</text>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="com.balsamiq.mockups::IconLabel" x="608" y="303" w="-1" h="-1" measuredW="70" measuredH="63" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::IconLabel" x="608" y="303" w="-1" h="-1" measuredW="70" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Get%20Testing</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Paragraph" x="182" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Paragraph" x="182" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <text>First%2C%20%5Bsign%20up%5D%20by%20completing%20your%20data%20and%20upload%20your%20documents.</text>
+        <text>First%2C%20%5Bsign%20up%5D%20with%20your%20new%20username%20and%20password.</text>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::Paragraph" x="382" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Paragraph" x="382" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <text>Second%2C%20you%20can%20choose%20which%20school%20that%20is%20opening%20a%20registration%20and%20try%20to%20apply%20for%20that%20school.</text>
+        <text>Second%2C%20you%20can%20choose%20which%20grade%20you%20want%20to%20apply%20for.%20Then%20edit%20your%20profile%20and%20upload%20your%20documents.</text>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::Paragraph" x="577" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Paragraph" x="577" y="381" w="132" h="92" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <text>Last%2C%20get%20your%20test%20from%20the%20school%20that%20you%20apply.%20Then%20you%20just%20need%20to%20wait%20for%20the%20confirmation%20whether%20you%20are%20accepted%20or%20not.</text>
+        <text>Last%2C%20wait%20for%20your%20testing%20schedule%20and%20get%20the%20test.%20Then%20you%20can%20check%20your%20test%20result.</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="151" w="734" h="-1" measuredW="100" measuredH="10" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::LinkBar" x="471" y="125" w="-1" h="-1" measuredW="345" measuredH="19" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>How%20It%20Works%2C%20Sign%20Up%2C%20Sign%20In%2C%20About%20Us%2C%20Contact</text>
       </controlProperties>
     </control>
   </controls>

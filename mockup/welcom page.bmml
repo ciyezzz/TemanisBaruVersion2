@@ -25,9 +25,10 @@
         <text>Welcome%20to%20Temanis%20Baru%21</text>
       </controlProperties>
     </control>
-    <control controlID="50" controlTypeID="com.balsamiq.mockups::LinkBar" x="440" y="125" w="-1" h="-1" measuredW="376" measuredH="19" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="151" w="734" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::LinkBar" x="471" y="125" w="-1" h="-1" measuredW="345" measuredH="19" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>How%20It%20Works%2C%20Sign%20Up%2C%20Sign%20In%2C%20About%2C%20Team%2C%20Contact</text>
+        <text>How%20It%20Works%2C%20Sign%20Up%2C%20Sign%20In%2C%20About%20Us%2C%20Contact</text>
       </controlProperties>
     </control>
   </controls>
