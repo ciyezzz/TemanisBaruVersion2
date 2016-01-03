@@ -1,0 +1,37 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="831" measuredH="564" mockupW="766" mockupH="525">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="65" y="39" w="766" h="525" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru%20%7C%20Website%20Pendaftaran%20Siswa%0Awww.temanisbaru.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::SubTitle" x="355" y="170" w="-1" h="-1" measuredW="186" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Verify%20Applicants</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::SubTitle" x="83" y="121" w="-1" h="-1" measuredW="149" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="151" w="734" h="-1" measuredW="100" measuredH="10" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::LinkBar" x="342" y="125" w="-1" h="-1" measuredW="474" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Open/Close%20Reg%2C%20Verify%20Applicants%2C%20Test%2C%20About%20Us%2C%20Contact%2C%20Sign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="491" w="734" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Label" x="345" y="505" w="-1" h="-1" measuredW="206" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Verified%3A%203%20%7C%20Not%20Verified%3A%202%20%7C%20Total%3A%205</text>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::DataGrid" x="102" y="221" w="693" h="246" measuredW="392" measuredH="171" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>No%2C%20Name%20%5E%2C%20Reg.%20Number%5E%2C%20Grade%20%5Ev%2C%20Verified%20%5E%0A1%2C%20Giacomo%20Guilizzoni%2C1501001%20%2CSMP%201%2C%20YES%0A2%2C%20Marco%20Botton%2C1505001%20%2CSMA%202%2C%20YES%0A3%2C%20Mariah%20Maclachlan%2C%201504001%2CSMA%201%2C%20NO%0A4%2C%20Valerie%20Liberty%2C%201503001%2CSMP%203%2C%20NO%0A5%2C%20Guido%20Jack%20Guilizzoni%2C1504002%20%2CSMA%201%2C%20YES%0A%7B0L%2C%2035L%2C%200C%2C%200C%7D</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

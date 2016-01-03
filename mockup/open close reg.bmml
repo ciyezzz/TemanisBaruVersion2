@@ -1,0 +1,51 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="831" measuredH="564" mockupW="766" mockupH="525">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="65" y="39" w="766" h="525" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru%20%7C%20Website%20Pendaftaran%20Siswa%0Awww.temanisbaru.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::SubTitle" x="314" y="170" w="-1" h="-1" measuredW="268" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Open/Close%20Registration</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::SubTitle" x="83" y="121" w="-1" h="-1" measuredW="149" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="151" w="734" h="-1" measuredW="100" measuredH="10" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::LinkBar" x="342" y="125" w="-1" h="-1" measuredW="474" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Open/Close%20Reg%2C%20Verify%20Applicants%2C%20Test%2C%20About%20Us%2C%20Contact%2C%20Sign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::DateChooser" x="373" y="239" w="-1" h="-1" measuredW="150" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20DD%20/%20MM%20/%20YY%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Label" x="379" y="218" w="-1" h="-1" measuredW="138" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Open%20Registration%20Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Label" x="379" y="279" w="-1" h="-1" measuredW="139" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Close%20Registration%20Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::DateChooser" x="373" y="300" w="-1" h="-1" measuredW="150" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20DD%20/%20MM%20/%20YY%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="111" controlTypeID="com.balsamiq.mockups::Button" x="411" y="340" w="-1" h="-1" measuredW="75" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Set%20Date</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

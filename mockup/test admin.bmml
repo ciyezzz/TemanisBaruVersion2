@@ -1,0 +1,78 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="831" measuredH="564" mockupW="766" mockupH="525">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="65" y="39" w="766" h="525" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru%20%7C%20Website%20Pendaftaran%20Siswa%0Awww.temanisbaru.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::SubTitle" x="424" y="169" w="-1" h="-1" measuredW="49" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Test</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::SubTitle" x="83" y="121" w="-1" h="-1" measuredW="149" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Temanis%20Baru</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="151" w="734" h="-1" measuredW="100" measuredH="10" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Label" x="321" y="211" w="-1" h="-1" measuredW="108" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Set%20testing%20date%20%3A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Button" x="411" y="249" w="-1" h="-1" measuredW="75" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Set%20Date</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::HRule" x="82" y="296" w="734" h="-1" measuredW="100" measuredH="10" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::LinkBar" x="342" y="125" w="-1" h="-1" measuredW="474" measuredH="19" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Open/Close%20Reg%2C%20Verify%20Applicants%2C%20Test%2C%20About%20Us%2C%20Contact%2C%20Sign%20Out</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::DateChooser" x="429" y="209" w="-1" h="-1" measuredW="146" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>DD%20/%20MM%20/%20YY%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::SubTitle" x="385" y="312" w="-1" h="-1" measuredW="126" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Test%20Result</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::DataGrid" x="102" y="339" w="693" h="183" measuredW="374" measuredH="171" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>No%2C%20Name%20%5E%2C%20Reg.%20Number%5E%2C%20Grade%20%5Ev%2C%20Test%20v%0A1%2C%20Giacomo%20Guilizzoni%2C1501001%20%2CSMP%201%2C%20%0A2%2C%20Marco%20Botton%2C1505001%20%2CSMA%202%2C%0A3%2C%20Mariah%20Maclachlan%2C%201504001%2CSMA%201%2C%0A4%2C%20Valerie%20Liberty%2C%201503001%2CSMP%203%2C%0A5%2C%20Guido%20Jack%20Guilizzoni%2C1504002%20%2CSMA%201%2C%0A%7B0L%2C%2035L%2C%200C%2C%200C%2C5%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::ComboBox" x="725" y="359" w="65" h="-1" measuredW="59" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pass</text>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::ComboBox" x="725" y="389" w="65" h="-1" measuredW="59" measuredH="24" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pass</text>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::ComboBox" x="725" y="480" w="65" h="-1" measuredW="59" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pass</text>
+      </controlProperties>
+    </control>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::ComboBox" x="725" y="450" w="-1" h="-1" measuredW="65" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Failed</text>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::ComboBox" x="725" y="420" w="-1" h="-1" measuredW="65" measuredH="24" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Failed</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
